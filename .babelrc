@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-react-jsx"
+  ],
+  "presets": [
+    ["es2015", {"modules": false}]
+  ],
+  "ignore": [
+    "foo.js",
+    "bar/**/*.js"
+  ]
+}

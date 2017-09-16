@@ -1,24 +1,10 @@
-// this file is split into dev and prod configs and not used
-// just reference
-
 const path = require('path')
-const webpack = require('webpack')
-
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
-    app: [
-      'react-hot-loader/patch',
-      'webpack-hot-middleware/client',
-      './src/index.js'
-    ]
-  },
-  devtool: 'eval',
-  devServer: {
-    contentBase: './dist',
-    hot: true
+    app: './src/index.js'
   },
   module: {
     rules: [
@@ -37,8 +23,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HTMLWebpackPlugin({
       template: __dirname + '/src/index.html'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ],
   output: {
     filename: '[name].bundle.js',
