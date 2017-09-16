@@ -1,4 +1,4 @@
-# webpack3
+# webpack3-react
 webpack3 configuration
 
 - npm i or yarn
