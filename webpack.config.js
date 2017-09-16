@@ -1,5 +1,6 @@
 // this file is split into dev and prod configs and not used
 // just reference
+// also only css loader configured, scss configs in separate files
 
 const path = require('path')
 const webpack = require('webpack')

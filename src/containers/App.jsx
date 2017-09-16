@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles.css'
+import '../styles.scss'
 
 class App extends Component {
   render() {
@@ -7,7 +7,9 @@ class App extends Component {
       <div>
         <header>Ensure Copy</header>
         <main>
-          <div>Page Content 1</div>
+          <div>
+            <p>Page Content 1</p>
+          </div>
           <div>Page Content 2</div>
           <div>Page Content 3</div>
           <div>Page Content 4</div>
